@@ -1,0 +1,12 @@
+import matplotlib.pyplot as plt 
+import numpy as np 
+x = np.linspace(0,200,500)
+r = 0.05 
+y  = 1000*np.exp(r*x)
+plt.plot(x,y, color = 'green', label = 'compound interset')
+plt.xlabel('time in years' , color = 'red') 
+plt.ylabel("ammount in dollars",color = 'red') 
+plt.title ('compound intrest', fontdict = {'family': 'cursive', 'color': 'blue', 'size': 20}) 
+plt.grid()
+plt.legend()
+plt.show()
